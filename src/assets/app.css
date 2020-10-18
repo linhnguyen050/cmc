@@ -1,0 +1,140 @@
+body {
+    background-color: #F0F4F7;
+    font-size: 13px;
+    font-family: Open Sans,sans-serif ;
+    font-weight: 400px;
+    list-style: 23px;
+    color: rbg(82, 95, 127);
+}
+.wrapper {
+    display: flex;
+    min-height: 120vh;
+
+}
+.container-fluid {
+    margin-top: 200px;
+}
+.row-container {
+    background-color: #ffffff;
+}
+
+.row-container form {
+    padding: 20px 0px;
+}
+
+.row-container h2 {
+    margin: 40px 0px ;
+    display: flex;
+    justify-content: center;
+    color: #3AB397;
+}
+.row-container p {
+    display: flex;
+    justify-content: center;
+    color: red;
+}
+.form-group {
+    display: block;
+    justify-content: center;
+
+}
+.form-group p {
+    font-size: 14px;
+    color: red;
+    margin: 0px;
+}
+.form-group form {
+    padding: 30px 0px 15px;
+}
+.form-group label {
+    margin: 6px 0px;
+}
+.btn-success {
+    width: 30%;
+}
+.input-group { 
+    width: 50%;
+}
+.btn-success {
+    background-color: #3AB397;
+}
+.main {
+    width: 100%;
+    display: block;
+    margin: 15px 0px;
+
+}
+.default {
+    width: 180px;
+    height: 1000px;
+    background-color:#262F3D;
+}
+
+.LayoutDefault__main {
+    margin: 0px 20px;
+    background-color: #F5F7FA;
+}
+.group-icon {
+    display: flex;
+    justify-content: flex-end;
+    width: 72%;
+
+}
+.group-icon svg {
+    font-size: 24px;
+    margin: 0px 15px;
+}
+.icon button {
+    margin: 0px 30px 0px 40px;
+}
+.col-sm-2  {
+    display: flex;
+    align-items: center;
+}
+.col-sm-2 label {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.wrapper {
+    display: flex;
+}
+.sidebar {
+    width: 260px;
+    background-color:#262F3D;
+}
+.sidebar li {
+    margin-bottom: 20px;
+    list-style: none;
+    margin-top: 10px;
+}
+.sidebar li a{
+    color: hsla(0,0%,100%,.55);
+    font-size: 14px;
+    text-decoration: none;
+}
+.sidebar li svg {
+    font-size: 18px;
+    margin-right: 10px;
+    color: hsla(0,0%,100%,.55);
+}
+.sidebar li a:hover {
+    color: red;
+}
+.card-body p {
+    font-size: 14px;
+    color: red;
+}
+.card-body span {
+    color: darkgreen;
+}
+.btn-post {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-post button {
+    width: 100px;
+    margin: 0px 60px 33px 0px;
+}

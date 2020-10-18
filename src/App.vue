@@ -1,16 +1,18 @@
 <template>
   <div id="app">
-    <DangNhap/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import DangNhap from './components/DangNhap.vue'
+import ('./assets/app.css')
+
+//import DangNhap from './components/DangNhap.vue'
 
 export default {
   name: 'App',
   components: {
-    DangNhap
+   
   }
 }
 </script>
