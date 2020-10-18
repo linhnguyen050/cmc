@@ -34,25 +34,27 @@ export default {
         items: []
       }
     },
-    async created() {
-        const ketqua = await axios.get('http://localhost:9000/api/user')
-            if(ketqua.status == 200) {
-                this.items = ketqua.data
-            }
+     async created() {
+        await this.getItems();
     },
     methods: {
         deleteUser: async function(id){
-             const xoa = confirm('Ban co chac muon  xoa?')
-             if(xoa == true){
-            const ketqua1 = await  axios.delete('http://localhost:9000/api/user/'+ id) 
-               this.items = ketqua1.data
-               const ketqua = await axios.get('http://localhost:9000/api/user')
+            const xoa = confirm('Bạn có chắc chắn muốn xoá không?')
+                if(xoa == true ){
+                    const ketqua1 = await axios.delete('http://localhost:9000/api/user/'+id)
+                    
+                    if (ketqua1.data.success) {
+                        this.getItems()
+                    }
+                }
+        },
+        async getItems() {
+            const ketqua = await axios.get('http://localhost:9000/api/user')
             if(ketqua.status == 200) {
                 this.items = ketqua.data
             }
-            }
-            
         }
-    } 
+    }
+  
 }
 </script>

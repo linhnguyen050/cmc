@@ -35,22 +35,24 @@ export default {
       }
     },
     async created() {
-        const ketqua = await axios.get('http://localhost:9000/api/post')
-            if(ketqua.status == 200) {
-                this.items = ketqua.data
-            }
+        await this.getItems();
     },
     methods: {
         deletePosts: async function(id){
             const xoa = confirm('Bạn có chắc chắn muốn xoá không?')
                 if(xoa == true ){
                     const ketqua1 = await axios.delete('http://localhost:9000/api/post/'+id)
-                        this.items = ketqua1.data
-                        const ketqua = await axios.get('http://localhost:9000/api/post')
-                            if(ketqua.status == 200) {
-                                this.items = ketqua.data
-                            }
+                    
+                    if (ketqua1.data.success) {
+                        this.getItems()
+                    }
                 }
+        },
+        async getItems() {
+            const ketqua = await axios.get('http://localhost:9000/api/post')
+            if(ketqua.status == 200) {
+                this.items = ketqua.data
+            }
         }
     }
   
