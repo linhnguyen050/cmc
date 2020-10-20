@@ -4,7 +4,7 @@
           <div class="col-12 col-sm-4 col-md-3 row-container ">
                 <form>
                     <h2>Đăng Nhập</h2>
-                    <div class="form-group">
+                    <div class="form-group-1 ">
                         <b-input-group class="mb-2">
                             <b-input-group-prepend is-text>
                                 <b-icon icon="person-fill"></b-icon>
@@ -13,7 +13,7 @@
                             <p v-if="username == '' && isClick">Bạn chưa nhập username</p> 
                         </b-input-group>  
                     </div>
-                    <div class="form-group">
+                    <div class="form-group-1">
                             <b-input-group class="mb-2">
                                 <b-input-group-prepend is-text>
                                     <b-icon icon="lock"></b-icon>
@@ -23,8 +23,8 @@
                             </b-input-group>
                     </div>
                     <p v-if="error">{{error}}</p>
-                    <div class="form-group">
-                        <b-button class="form-control" pill variant="success" @click="dangnhap">Button</b-button>
+                    <div class="form-group-1">
+                        <b-button class="form-control-1" pill variant="success" @click="dangnhap">Button</b-button>
                     </div>
                     
                 </form>

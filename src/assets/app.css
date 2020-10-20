@@ -38,6 +38,16 @@ body {
     justify-content: center;
 
 }
+.form-group-1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+.form-group-1 button {
+    display: flex;
+    justify-content: center;
+}
 .form-group p {
     font-size: 14px;
     color: red;
